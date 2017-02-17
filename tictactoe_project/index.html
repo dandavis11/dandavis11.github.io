@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe Game - Sam, Dan, & Bill</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="leftContainer">
+            <div>
+                <div class="gameName">Tic Tac Toe</div>
+                <!--<div class="bottomHalf"></div>-->
+            </div>
+        <div class="playerTurn">Player Turn</div>
+        <div class="stats1">
+            <div class="stats p1Wins">
+                <div class="statsTitle">Player 1 Wins</div>
+                <div class="statsScore" id="p1Score"></div>
+            </div>
+            <div class="stats p2Wins">
+                <div class="statsTitle">Player 2 Wins</div>
+                <div class="statsScore" id="p2Score"></div>
+            </div>
+        </div>
+        <div class="stats2">
+            <div class="stats aiWins">
+                <div class="statsTitle">AI Wins</div>
+                <div class="statsScore" id="aiScore"></div>
+            </div>
+            <div class="stats draws">
+                <div class="statsTitle">Draws</div>
+                <div class="statsScore" id="drawsScore"></div>
+            </div>
+        </div>
+        <!--<div class="newGameContainer">-->
+            <div class="gameOptions">
+                <h2>Game Options</h2>
+                <form>
+                    How many tiles in each row?<input class="boardSizeInput" type="text" placeholder="#" maxlength="2">
+                    AI : <input class="aiCheckbox" type="checkbox" name="aiOption"><br>
+                    P1 Name : <input class="p1Input pInput" type="text" maxlength="12" placeholder="Player 1 Name">
+                    P1 Marker : <input class="p1Mark mark" type="text" maxlength="1" placeholder="X"><br>
+                    P2 Name : <input class="p2Input pInput" type="text" maxlength="12" placeholder="Player 2 Name">
+                    P2 Marker : <input class="p2Mark mark" type="text" maxlength="1" placeholder="O"><br>
+                </form>
+            </div>
+            <div class="newGameButton">
+                New Game
+            </div>
+        <!--</div>-->
+    </div>
+    <div class="rightContainer">
+        <div class="boardContainer"></div>
+    </div>
+</div>
+</body>
+</html>

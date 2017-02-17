@@ -1,0 +1,251 @@
+body {
+    font-family: arial, sans-serif;
+    margin: 0;
+    line-height: 0;
+    font-size: 0;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+    /*background-image: url("images/bgDark.jpg");*/
+    /*background-size: cover;*/
+}
+
+/* LEFT SIDE OF SCREEN */
+
+.leftContainer {
+    width: 30vw;
+    height: 96vh;
+    margin: 2vh 0;
+    float: left;
+    font-size: 3vw;
+    line-height: 4vw;
+}
+
+.gameName {
+    height: 12vh;
+    margin: 0 1vh 1vh 1vh;
+    padding: 1vh;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 5.5vw;
+    line-height: 13vh;
+    color: #ffffff;
+    background-color: #59554E;
+    letter-spacing: -2px;
+    border-radius: 8px;
+}
+
+/*.bottomHalf {*/
+/*height:9vh;*/
+/*background-image: linear-gradient(to top, #ffffff, #595959);*/
+/*margin: 0 1vh 1vh 1vh;*/
+/*}*/
+
+.playerTurn {
+    height: 12vh;
+    margin: 1vh;
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 4.5vw;
+    line-height: 12vh;
+    color: #ffffff;
+    background-color: #BCBCBC;
+    border-radius: 8px;
+}
+
+/* STATS SECTION */
+.stats1 {
+    width: 100%;
+}
+
+.stats2 {
+    width: 100%;
+    /*font-size: 0;*/
+}
+
+.stats {
+    height: 18vh;
+    width: 46%;
+    margin: 1vh auto;
+    display: inline-block;
+    background-color: rgba(233, 233, 233, 0.47);
+    border-radius: 5%;
+
+}
+
+.statsTitle {
+    font-size: 1.8vw;
+    line-height: 2.8vw;
+    height: 5vh;
+    background-color: #ffffff;
+}
+
+.statsScore {
+    height: 13vh;
+    font-size: 11vh;
+    line-height: 13vh;
+    font-weight: bold;
+}
+
+/*.newGameContainer {*/
+    /*height: 26vh;*/
+    /*margin: 1vh;*/
+    /*font-family: 'Fjalla One', sans-serif;*/
+    /*!*font-size: 9vh;*!*/
+    /*!*line-height: 18vh;*!*/
+    /*color: #ffffff;*/
+    /*background-color: #59554E;*/
+    /*border-radius: 8pt;*/
+/*}*/
+
+.gameOptions {
+    height: 17vh;
+    margin: 1vh;
+    font-family: arial, sans-serif;
+    font-size: 1.3vw;
+    line-height: 3vh;
+    color: #000000;
+    background-color: #bcbcbc;
+    border-radius: 8pt;
+    padding: 10px;
+}
+
+h2 {
+    margin: 1vh 0;
+}
+
+.boardSizeInput {
+    margin: 0 5px;
+    width: 3vw;
+}
+
+.aiCheckbox {
+
+}
+
+.pInput {
+    width: 8vw;
+}
+
+.mark {
+    width: 2vw;
+}
+
+.newGameButton {
+    height: 6vh;
+    line-height: 6vh;
+    margin: 1vh;
+    font-family: 'Fjalla One', sans-serif;
+    color: #ffffff;
+    background-color: #59554E;
+    border-radius: 8pt;
+    font-size: 2.5vw;
+}
+
+
+
+/* RIGHT SIDE OF SCREEN */
+
+.rightContainer {
+    width: 70vw;
+    height: 100%;
+    float: left;
+    text-align: center;
+}
+
+.boardContainer {
+    height: 96vh;
+    width: 96vh;
+    margin: 2vh auto;
+    background-color: #595959;
+    background: radial-gradient(#272727, rgb(168, 168, 168));
+    text-align: center;
+    line-height: 0;
+    font-size: 0;
+    border-radius: 1%;
+}
+
+.boardSquare {
+    height: 31.3%;
+    width: 31.3%;
+    background-color: lightblue;
+    background: linear-gradient(to top, #cbcbcb, #ffffff);
+    display: inline-block;
+    float: left;
+    margin: 1%;
+    border-radius: 4%;
+    color: #fa6d6d;
+    font-size: 30vh;
+    line-height: 30vh;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.winningSquares {
+    -webkit-animation: winner 3s infinite;
+}
+
+.unmarked:hover {
+    background: linear-gradient(131deg, #ffffff, #595959);}
+
+@-webkit-keyframes winner {
+    0% {
+        transform: scale(1);
+        color: #45ddd3;
+    }
+    25% {
+        transform: scale(1.1);
+        color: #00E3BB;
+    }
+    50% {
+        transform: scale(1.05);
+        color: #ffffff;
+    }
+    75% {
+        transform: scale(1.1);
+        color: #00E3BB;
+    }
+    100% {
+        transform: scale(1.0);
+        color: #45ddd3;
+    }
+}
+.firstPlayer {
+    background-color: #4d7ee3;
+}
+.secondPlayer {
+    background-color: #fa6d6d;
+}
+
+
+.winner {
+    background-color: #00E3BB;
+    -webkit-animation: winName 3s infinite;
+}
+.draw {
+    background-color: #d9b253;
+    -webkit-animation: winName 3s infinite;
+}
+@-webkit-keyframes winName {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.05);
+    }
+    50% {
+        transform: scale(1);
+
+    }
+    75% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+
+    }
+}
